@@ -2,27 +2,30 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Tooltip from "@material-ui/core/Tooltip";
+import { FaHandPeace } from "react-icons/fa";
 import "./About.css";
 
 export const About = () => {
   return (
-    <Grid
-      container
-      className="main_container"
-      justify="space-between"
-      direction="column"
-    >
+    <Grid container className="main_container">
       <Grid item className="content">
         <Typography gutterBottom className="h4" variant="h4">
-          Hello my name is <b>Binh</b> and I am an aspiring... <br></br>
+          Hello my name is <b>Binh</b> and I´m an aspiring... <br></br>
         </Typography>
         <Typography gutterBottom className="frontend" variant="h3">
-          Frontend Developer ✌️
+          <b>Frontend Developer</b> <FaHandPeace />
         </Typography>
       </Grid>
-      <Grid container justify="center" alignItems="center" className="skills">
+      <Grid
+        container
+        justify="space-around"
+        alignItems="center"
+        className="skills"
+      >
         <Grid item>
-          <Typography>My stack</Typography>
+          <Typography variant="h3" gutterBottom>
+            Meine Superkräfte
+          </Typography>
         </Grid>
         <Grid
           className="skill_container"
@@ -63,7 +66,7 @@ export const About = () => {
               <img
                 className="logo"
                 alt="ReactJs"
-                src="https://png2.cleanpng.com/sh/0620947c9142f329ccfa004dfd5b0a81/L0KzQYm3VsA1N5p0iZH0aYP2gLBuTgJmaZR5RdxqdnH2c8PwkQQuaZ9sjd5qcnr2Pbr2jvlkNZJ5h982NXK0RYXphcY6PGg5Tak3M0S6QYq7UcgyPWM9SaQ7M0S1RoGBUb5xdpg=/kisspng-react-javascript-angularjs-ionic-atom-5b154be6947457.3471941815281223426081.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"
               ></img>
             </Tooltip>
           </Grid>

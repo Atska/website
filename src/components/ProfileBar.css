@@ -1,40 +1,36 @@
 .profile_container {
   min-height: 85vh;
-  padding: 1%;
-  border-radius: 6px;
-  border-style: solid;
-  border-color: crimson;
-  color: black;
-  background-color: rgb(235, 235, 235);
+  padding: 2%;
+  border: 3px solid var(--teal);
+  color: var(--teal);
+  border-radius: 3px;
 }
 
 .profile_pic {
   margin: auto;
   display: block;
-  max-width: 65%;
-  max-height: 65%;
-  border-color: blue;
-  border-style: solid;
+  max-width: 55%;
+  max-height: 55%;
+  border: 3px solid var(--teal);
   border-radius: 50%;
+  opacity: 80%;
 }
+
 .identity {
   text-align: center;
-  border-style: solid;
-  border-color: blue;
 }
 .about {
-  border-style: solid;
-  border-color: blue;
+  display: inline-block;
+  padding: 0 min(30px, 3%);
 }
 
 .contact {
-  border-color: blue;
-  border-style: solid;
+  padding: min(20px, 3%) auto;
 }
 
 .contact a {
   text-decoration: none;
-  color: black;
+  color: var(--teal);
 }
 
 .contact_unit {
@@ -55,7 +51,7 @@
   Media queries
 ***************/
 @media screen and (max-width: 960px) {
-  .profile_container {
+  .prosfile_container {
     max-height: 85vh;
   }
 }

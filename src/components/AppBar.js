@@ -6,32 +6,38 @@ import { Link } from "react-router-dom";
 import "./AppBar.css";
 
 export const AppBar = () => {
-  const [title, setTitle] = useState("Über mich");
+  const [title, setTitle] = useState("<About/>");
   return (
     <Grid item className="navbar">
       <div className="title">
         <Link className="btn" to="/">
-          <Typography variant="h5">{title}</Typography>
+          <Typography variant="h5" color="primary">
+            {title}
+          </Typography>
         </Link>
       </div>
       <div>
         <Link className="btn" to="/about">
           <Button
+            size="large"
+            color="primary"
             variant="text"
             onClick={() => {
-              setTitle("Über mich");
+              setTitle("<About/>");
             }}
           >
-            Über mich
+            About
           </Button>
         </Link>
       </div>
       <div>
         <Link className="btn" to="/projekte">
           <Button
+            color="primary"
+            size="large"
             variant="text"
             onClick={() => {
-              setTitle("Projekte");
+              setTitle("<Projekte/>");
             }}
           >
             Projekte

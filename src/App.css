@@ -1,5 +1,11 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
-  padding-top: 4%;
+  padding-top: 5%;
   max-width: 100%;
 }
 

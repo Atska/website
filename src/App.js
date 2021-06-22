@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Grid from "@material-ui/core/Grid";
 import { ProfileBar } from "./components/ProfileBar.js";
 import { MainBar } from "./components/MainBar.js";
@@ -6,6 +7,12 @@ import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import "./App.css";
 
 const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#02a9db",
+      dark: "rgb(4, 1, 34)",
+    },
+  },
   typography: {
     fontFamily: [
       "-apple-system",
@@ -23,6 +30,14 @@ const theme = createMuiTheme({
 });
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <Router>
@@ -37,7 +52,7 @@ function App() {
             <Grid item xs={12} sm={7} md={7}>
               <MainBar />
             </Grid>
-            <Grid item xs={12} sm={7} md={3}>
+            <Grid item xs={12} sm={7} md={4}>
               <ProfileBar />
             </Grid>
           </Grid>
