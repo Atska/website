@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import Grid from "@material-ui/core/Grid";
+import { ProfileBar } from "./components/ProfileBar.js";
+import { MainBar } from "./components/MainBar.js";
+import { BrowserRouter as Router } from "react-router-dom";
+import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import "./App.css";
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      "-apple-system",
+      "BlinkMacSystemFont",
+      '"Segoe UI"',
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(","),
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <div className="App">
+          <Grid
+            container
+            justify="center"
+            alignItems="center"
+            className="container"
+            spacing={4}
+          >
+            <Grid item xs={12} sm={7} md={7}>
+              <MainBar />
+            </Grid>
+            <Grid item xs={12} sm={7} md={3}>
+              <ProfileBar />
+            </Grid>
+          </Grid>
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 

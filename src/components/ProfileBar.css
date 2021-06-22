@@ -1,0 +1,61 @@
+.profile_container {
+  min-height: 85vh;
+  padding: 1%;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: crimson;
+  color: black;
+  background-color: rgb(235, 235, 235);
+}
+
+.profile_pic {
+  margin: auto;
+  display: block;
+  max-width: 65%;
+  max-height: 65%;
+  border-color: blue;
+  border-style: solid;
+  border-radius: 50%;
+}
+.identity {
+  text-align: center;
+  border-style: solid;
+  border-color: blue;
+}
+.about {
+  border-style: solid;
+  border-color: blue;
+}
+
+.contact {
+  border-color: blue;
+  border-style: solid;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact_unit {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.contact_unit:hover {
+  transform: scale(1.05);
+}
+
+/***************
+  Media queries
+***************/
+@media screen and (max-width: 960px) {
+  .profile_container {
+    max-height: 85vh;
+  }
+}

@@ -1,0 +1,40 @@
+.main_container {
+  padding: 1.5em;
+  border-style: solid;
+  border-color: green;
+}
+
+.content {
+  text-align: center;
+}
+
+.skills {
+  margin-top: 5%;
+}
+
+.logo {
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.skill_container {
+}
+
+.skill_title {
+  font-size: 30rem;
+  font-weight: 400px;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+/***************
+  Media queries
+***************/
+@media screen and (max-width: 960px) {
+  .logo {
+    max-width: 70px;
+    max-height: 70px;
+  }
+}
