@@ -1,7 +1,4 @@
 .projekte_container {
   padding: 1.5em;
-  margin-top: min(35px, 5%);
-  min-height: 70vh;
-  -top: min(35px, 5%);
   min-height: 70vh;
 }

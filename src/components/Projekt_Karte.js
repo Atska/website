@@ -13,8 +13,7 @@ export const ProjektKarte = () => {
   return (
     <div className="card_container">
       <CardActionArea>
-        {" "}
-        <img class="image" alt="1" src="/kek.png"></img>
+        <img class="image" alt="1" src="/static/Maze.jpg"></img>
       </CardActionArea>
     </div>
   );

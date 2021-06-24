@@ -9,7 +9,7 @@ import "./MainBar.css";
 
 export const MainBar = () => {
   return (
-    <Grid container direction="column" alignItems="center" className="main_bar">
+    <Grid container direction="column" className="main_bar">
       <AppBar />
       <Switch>
         <Route path="/about">

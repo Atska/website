@@ -9,9 +9,13 @@ export const Projekte = () => {
     <Grid
       container
       justify="space-evenly"
+      alignItems="center"
       className="projekte_container"
-      spacing={3}
+      spacing={2}
     >
+      <Grid item>
+        <ProjektKarte />
+      </Grid>
       <Grid item>
         <ProjektKarte />
       </Grid>
