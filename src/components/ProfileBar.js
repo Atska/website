@@ -1,5 +1,4 @@
 import React from "react";
-import pic from "./pic.jpg";
 import "./ProfileBar.css";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
@@ -17,7 +16,7 @@ export const ProfileBar = () => {
       container
       direction="column"
       alignItems="center"
-      justify="space-around"
+      justify="space-evenly"
       className="profile_container"
       noWrap
     >
@@ -29,11 +28,11 @@ export const ProfileBar = () => {
           placement="right"
           arrow
         >
-          <img src={pic} alt="avatar" className="profile_pic"></img>
+          <img src="static/pic.jpg" alt="avatar" className="profile_pic"></img>
         </Tooltip>
       </Grid>
       <Grid item className="identity">
-        <Typography variant="h5">Binh Nguyen</Typography>
+        <Typography variant="h4">Binh Nguyen</Typography>
       </Grid>
       <Grid item className="contact">
         <Typography variant="button" className="contact_unit" noWrap>
@@ -44,7 +43,7 @@ export const ProfileBar = () => {
           <FiPhoneCall className="icon" />
           0176 / 73507879
         </Typography>
-        <Typography variant="button" className="contact_unit" noWrap>
+        <Typography variant="button" className="contact_unit" noWrap >
           <HiOutlineMail className="icon" />
           <a href="mailto:Binh.Nguyen93@web.de">Binh.Nguyen93@web.de</a>
         </Typography>
