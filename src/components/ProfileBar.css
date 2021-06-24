@@ -4,6 +4,11 @@
   border: 3px solid var(--teal);
   color: var(--teal);
   border-radius: 3px;
+  box-shadow: 1px 1px 7px var(--teal);
+}
+
+.profile_container:hover {
+  box-shadow: 2px 2px 18px var(--teal);
 }
 
 .profile_pic {
@@ -11,7 +16,7 @@
   display: block;
   max-width: 55%;
   max-height: 55%;
-  border: 3px solid var(--teal);
+  border: 5px solid var(--teal);
   border-radius: 50%;
   opacity: 80%;
 }

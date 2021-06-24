@@ -4,4 +4,9 @@
   border: 3px solid var(--teal);
   color: var(--teal);
   border-radius: 3px;
+  box-shadow: 1px 1px 7px var(--teal);
+}
+
+.main_bar:hover {
+  box-shadow: 2px 2px 18px var(--teal);
 }

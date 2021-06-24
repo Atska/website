@@ -1,0 +1,16 @@
+.card_container {
+  width: 200px;
+  height: 200px;
+  border: 3px solid var(--teal);
+  border-radius: 3px;
+}
+
+.image {
+  opacity: 70%;
+  width: 200px;
+  height: 200px;
+}
+
+.image:hover {
+  opacity: 100%;
+}

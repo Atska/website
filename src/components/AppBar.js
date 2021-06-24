@@ -10,14 +10,12 @@ export const AppBar = () => {
   return (
     <Grid item className="navbar">
       <div className="title">
-        <Link className="btn" to="/">
-          <Typography variant="h5" color="primary">
-            {title}
-          </Typography>
-        </Link>
+        <Typography variant="h4" color="primary">
+          {title}
+        </Typography>
       </div>
       <div>
-        <Link className="btn" to="/about">
+        <Link className="btn" to="/">
           <Button
             size="large"
             color="primary"
