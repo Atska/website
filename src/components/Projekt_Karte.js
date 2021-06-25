@@ -9,11 +9,15 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import "./Projekt_Karte.css";
 
-export const ProjektKarte = () => {
+export const ProjektKarte = (props) => {
+  const { name, address } = props;
+  console.log(props);
   return (
     <div className="card_container">
       <CardActionArea>
-        <img class="image" alt="1" src="/static/Maze.jpg"></img>
+        <a href={address}>
+          <img class="image" alt="1" src={`/static/${name}.jpg`}></img>
+        </a>
       </CardActionArea>
     </div>
   );

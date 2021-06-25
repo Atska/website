@@ -10,7 +10,7 @@ export const About = () => {
     <Grid container className="main_container">
       <Grid item className="content">
         <Typography gutterBottom className="h4" variant="h4">
-          Hello my name is <b>Binh</b> and I´m an aspiring... <br></br>
+          Hallo, mein Name ist <b>Binh</b> und ich bin ein<br></br>
         </Typography>
         <Typography gutterBottom className="frontend" variant="h3">
           <b>Frontend Developer</b> <FaHandPeace />

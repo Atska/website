@@ -5,6 +5,19 @@ import Grid from "@material-ui/core/Grid";
 import "./Projekte.css";
 
 export const Projekte = () => {
+  const names = [
+    {
+      name: "Conway",
+      address: "https://github.com/Atska/Conways-Game-Of-Life",
+    },
+    { name: "Firegram", address: "https://github.com/Atska/firegram" },
+    {
+      name: "Maze",
+      address: "https://atska.github.io/Pathfinding-and-Maze-Visualizer/",
+    },
+    { name: "website", address: "https://github.com/Atska/website/" },
+  ];
+
   return (
     <Grid
       container
@@ -13,24 +26,13 @@ export const Projekte = () => {
       className="projekte_container"
       spacing={2}
     >
-      <Grid item>
-        <ProjektKarte />
-      </Grid>
-      <Grid item>
-        <ProjektKarte />
-      </Grid>
-      <Grid item>
-        <ProjektKarte />
-      </Grid>
-      <Grid item>
-        <ProjektKarte />
-      </Grid>
-      <Grid item>
-        <ProjektKarte />
-      </Grid>
-      <Grid item>
-        <ProjektKarte />
-      </Grid>
+      {names.map((name) => {
+        return (
+          <Grid item>
+            <ProjektKarte name={name.name} address={name.address} />
+          </Grid>
+        );
+      })}
     </Grid>
   );
 };
