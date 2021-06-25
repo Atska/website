@@ -3,32 +3,10 @@ import Grid from "@material-ui/core/Grid";
 import { ProfileBar } from "./components/ProfileBar.js";
 import { MainBar } from "./components/MainBar.js";
 import { BrowserRouter as Router } from "react-router-dom";
-import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/core/styles";
 import { BatteryLoading } from "react-loadingg";
+import { theme } from "./theme.js";
 import "./App.css";
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: "#02a9db",
-      dark: "rgb(4, 1, 34)",
-    },
-  },
-  typography: {
-    fontFamily: [
-      "-apple-system",
-      "BlinkMacSystemFont",
-      '"Segoe UI"',
-      "Roboto",
-      '"Helvetica Neue"',
-      "Arial",
-      "sans-serif",
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(","),
-  },
-});
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -52,8 +30,7 @@ function App() {
               justify="center"
               alignItems="center"
               className="container"
-              spacing={4}
-            >
+              spacing={4}>
               <Grid item xs={12} sm={7} md={7}>
                 <MainBar />
               </Grid>

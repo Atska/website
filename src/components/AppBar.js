@@ -22,8 +22,7 @@ export const AppBar = () => {
             variant="text"
             onClick={() => {
               setTitle("<About/>");
-            }}
-          >
+            }}>
             About
           </Button>
         </Link>
@@ -36,8 +35,7 @@ export const AppBar = () => {
             variant="text"
             onClick={() => {
               setTitle("<Projekte/>");
-            }}
-          >
+            }}>
             Projekte
           </Button>
         </Link>

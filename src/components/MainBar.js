@@ -1,6 +1,5 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
 import { Switch, Route } from "react-router-dom";
 import { AppBar } from "./AppBar.js";
 import { Projekte } from "./Projekte.js";
@@ -12,9 +11,6 @@ export const MainBar = () => {
     <Grid container direction="column" className="main_bar">
       <AppBar />
       <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
         <Route path="/projekte">
           <Projekte />
         </Route>
