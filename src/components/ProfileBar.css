@@ -52,3 +52,7 @@
   transform: scale(1.05);
 }
 
+.CV {
+  text-decoration: none;
+  color: var(--teal);
+}

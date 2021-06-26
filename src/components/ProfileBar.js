@@ -43,7 +43,7 @@ export const ProfileBar = () => {
           <FiPhoneCall className="icon" />
           0176 / 73507879
         </Typography>
-        <Typography variant="button" className="contact_unit" noWrap >
+        <Typography variant="button" className="contact_unit" noWrap>
           <HiOutlineMail className="icon" />
           <a href="mailto:Binh.Nguyen93@web.de">Binh.Nguyen93@web.de</a>
         </Typography>
@@ -64,7 +64,10 @@ export const ProfileBar = () => {
       </Grid>
       <Grid item>
         <Button color="primary" size="small" variant="outlined">
-          <FaCloudDownloadAlt className="icon" /> Lebenslauf
+          <FaCloudDownloadAlt href="CV.pdf" className="icon" />
+          <a className="CV" href="CV.pdf">
+            Lebenslauf
+          </a>
         </Button>
       </Grid>
     </Grid>

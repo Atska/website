@@ -26,12 +26,12 @@
   border-bottom: 5px solid;
   padding: 5px 10px;
   background-color: #d2f5ff;
-  opacity: 84%;
 }
 
 .skill_title {
   font-size: 30rem;
   font-weight: 400px;
+  opacity: 90%;
 }
 
 .btn {
