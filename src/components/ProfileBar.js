@@ -28,7 +28,7 @@ export const ProfileBar = () => {
           placement="right"
           arrow
         >
-          <img src="static/pic.jpg" alt="avatar" className="profile_pic"></img>
+          <img src="static/pic.png" alt="avatar" className="profile_pic"></img>
         </Tooltip>
       </Grid>
       <Grid item className="identity">

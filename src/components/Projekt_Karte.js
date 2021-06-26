@@ -8,7 +8,7 @@ export const ProjektKarte = (props) => {
     <div className="card_container">
       <CardActionArea>
         <a href={address}>
-          <img class="image" alt="1" src={`/static/${name}.jpg`}></img>
+          <img class="image" alt="1" src={`/static/${name}.png`}></img>
         </a>
       </CardActionArea>
     </div>
