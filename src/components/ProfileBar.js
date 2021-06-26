@@ -21,15 +21,7 @@ export const ProfileBar = () => {
       noWrap
     >
       <Grid item>
-        <Tooltip
-          title="Moin 👋"
-          leaveDelay="1"
-          enterDelay={800}
-          placement="right"
-          arrow
-        >
-          <img src="static/pic.png" alt="avatar" className="profile_pic"></img>
-        </Tooltip>
+        <img src="/pic.png" alt="avatar" className="profile_pic"></img>
       </Grid>
       <Grid item className="identity">
         <Typography variant="h4">Binh Nguyen</Typography>
