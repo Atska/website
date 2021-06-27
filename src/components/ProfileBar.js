@@ -3,7 +3,6 @@ import "./ProfileBar.css";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import Tooltip from "@material-ui/core/Tooltip";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -18,8 +17,7 @@ export const ProfileBar = () => {
       alignItems="center"
       justify="space-evenly"
       className="profile_container"
-      noWrap
-    >
+      noWrap>
       <Grid item>
         <img src="/pic.png" alt="avatar" className="profile_pic"></img>
       </Grid>
