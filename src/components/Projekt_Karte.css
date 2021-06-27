@@ -10,13 +10,8 @@
 }
 
 .image {
-  opacity: 90%;
   max-width: 200px;
   max-height: 200px;
-}
-
-.image:hover {
-  opacity: 100%;
 }
 
 /***************

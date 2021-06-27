@@ -18,11 +18,6 @@
   max-height: 55%;
   border: 5px solid var(--teal);
   border-radius: 50%;
-  opacity: 90%;
-}
-
-.profile_pic:hover {
-  opacity: 100%;
 }
 
 .identity {
